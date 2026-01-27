@@ -1,0 +1,12 @@
+{
+    "cmsis-csolution.environmentVariables": {
+        "ZEPHYR_BASE": "$HOME/zephyrproject/zephyr",
+        "PATH": "$HOME/zephyrproject/.venv/bin",
+        "VIRTUAL_ENV": "$HOME/zephyrproject/.venv"
+    },
+    "debug.hideSlowPreLaunchWarning": true,
+    "debug.showInStatusBar": "never",
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/out/executorch-example/AVH-SSE-300/Debug"
+    ]
+}

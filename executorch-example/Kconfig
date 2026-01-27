@@ -1,0 +1,30 @@
+# Copyright (c) Meta Platforms, Inc. and affiliates.
+# All rights reserved.
+# Copyright 2025 Arm Limited and/or its affiliates.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+source "Kconfig.zephyr"
+
+menu "ExecuTorch Application Configuration"
+
+config EXECUTORCH_METHOD_ALLOCATOR_POOL_SIZE
+	int "Method allocator pool size in bytes"
+	default 262144
+	help
+	  Size of the method allocator pool in bytes. This memory is used
+	  for allocating ExecuTorch method instances, inputs, outputs, and
+	  their metadata. Default is 256KB which should be sufficient for
+	  most small to medium models. Larger models may require more memory.
+
+config EXECUTORCH_TEMP_ALLOCATOR_POOL_SIZE
+	int "Temporary allocator pool size in bytes"
+	default 1572864
+	help
+	  Size of the temporary allocator pool in bytes (tensor arena). This
+	  memory is used for temporary allocations during model execution
+	  including intermediate tensor calculations and Ethos-U scratch memory.
+	  Default is 1.5MB which should be sufficient for typical Ethos-U
+	  delegated models. Complex models may require more memory.
+
+endmenu
