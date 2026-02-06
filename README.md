@@ -1,5 +1,4 @@
-# ExecuTorch on Zephyr RTOS with CMSIS Toolbox
-
+# ExecuTorch on Zephyr with CMSIS-Executorch docker integration
 This example demonstrates running [ExecuTorch](https://pytorch.org/executorch/) inference on Arm Cortex-M with Ethos-U NPU acceleration using Zephyr RTOS, built and managed through the CMSIS Toolbox.
 
 ## Overview
