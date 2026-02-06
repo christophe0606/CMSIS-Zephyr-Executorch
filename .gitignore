@@ -93,7 +93,6 @@ uv2csolution.log
 bootloader/
 modules/
 tools/
-zephyr/
 .west/
 
 # ExecuTorch build artifacts
